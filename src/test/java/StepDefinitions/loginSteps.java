@@ -21,7 +21,7 @@ public class loginSteps {
         driver.get("https://www.trenitalia.com/it/informazioni/acquisti_online.html");
         driver.manage().window().maximize();
        LoginPage ll=new LoginPage(driver);
-       ll.loginnarea();
+       ll.enterloc("Roma Tiburtina", "Salerno Arbostella");
 
     }
     @Given("user in login page")
